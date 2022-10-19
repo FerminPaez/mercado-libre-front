@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bgc-y{
+  background-color: #FFE600;
+}
+
+.bgc-dg{
+  background-color: #333333;
+}
+
+.bgc-mg{
+  background-color: #666666;
+}
+
+.bgc-lg{
+  background-color: #999999;
+}
+
+.bgc-lwg{
+  background-color: #EEEEEE;
+}
+.bgc-w{
+  background-color: white;
+}
+
+.fs-12{
+  font-size: 12px;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-18{
+  font-size: 18px;
+}
+
+.fs-24{
+  font-size: 24px;
+}
+
+.m-16{
+  margin: 16px;
+}
+
+.mb-32{
+  margin-bottom: 32px;
+}
+
+.ml-32{
+  margin-left: 32px;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+.p-0{
+  padding: 0;
+}
+.pt-16{
+  padding-top: 16px;
+}
+
+.pt-32{
+  padding-top: 32px;
+}
+
+.pb-16{
+  padding-bottom: 16px;
+}
+
+.pb-32{
+  padding-bottom: 32px;
+}

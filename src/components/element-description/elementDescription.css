@@ -1,0 +1,31 @@
+.amount{
+    display: inline-flex;
+    font-size: 46px;
+}
+
+.comprar{
+    background-color: #3483FA;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    padding: 7px;
+    width: 80%;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.img-description{
+    width: 680px;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+span{
+    font-size: 18px;
+    margin-top: 8px
+}
