@@ -1,3 +1,10 @@
+# ANTES DE EMEPZAR
+Descargar y levantar el proyecto https://github.com/FerminPaez/bffe-mercado-libre con `npm run dev`
+
+# TODO
+    - Terminar los test
+    - Encontrar una mejor forma de optimizar la peticiones
+    - Manejar errores
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
