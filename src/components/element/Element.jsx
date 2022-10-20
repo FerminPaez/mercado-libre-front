@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import './element.css'
 import freeShippingIcon from '../../assets/ic_shipping.png'
 import { getCurrencySymbol } from '../../utils/strings'

@@ -1,11 +1,8 @@
-// import React, { serializeFormQuery } from 'react'
 import React, { useState } from 'react'
 import './searcher.css'
 import LogoML from '../../assets/LogoML.png'
 import IcSearch from '../../assets/IcSearch.png'
 import { useNavigate } from 'react-router-dom'
-
-// import { useSearchParams } from 'react-router-dom'
 
 export const Searcher = ({ setSearchParams }) => {
   const [search, setSearch] = useState('')
