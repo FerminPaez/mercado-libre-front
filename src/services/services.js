@@ -20,9 +20,15 @@ export const getList = async (query) => {
     // Es una forma de no hacer la misma peticion todo el tiempo
     // Faltaria mejorar un poco la idea
     const resp = await fetch(route)
-    const respjson = await resp.json()
-    histPeticiones[query] = respjson
-    return histPeticiones[query]
+    console.log(resp.status)
+    if (resp === 200) {
+      const respjson = await resp.json()
+      histPeticiones[query] = respjson
+      return histPeticiones[query]
+    } else if (resp.status === 404) {
+      console.log('estoy entrando al else if')
+      return 404
+    }
   }
   return histPeticiones[query]
 }

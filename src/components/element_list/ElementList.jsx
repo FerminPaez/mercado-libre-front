@@ -6,12 +6,16 @@ import { Element } from '../element/Element'
 export const ElementList = ({ search }) => {
   const [elementList, setElementList] = useState('')
   const { current: myArray } = useRef(elementList)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const setList = async () => {
       if (search !== null && search !== '' && search !== undefined) {
         const respjson = await getList(search)
-        setElementList(respjson.items)
+        console.log(respjson)
+        if (respjson === 404) {
+          setError(respjson)
+        } else setElementList(respjson.items)
       }
     }
     setList()
@@ -27,7 +31,7 @@ export const ElementList = ({ search }) => {
               <Element props={elemento}/>
             </Link>)
         })
-        : <p>Cargando</p>
+        : error !== 404 ? <p>Cargando</p> : <p>Estamos teniendo problemas para realizar esta busqueda</p>
       }
     </div>
   )
